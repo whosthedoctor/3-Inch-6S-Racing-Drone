@@ -1,8 +1,11 @@
 # 3D-Printed 6S Racing Drone
 
-A fully 3D-printed X-quad FPV racing drone designed in Onshape — frame, arms,
+A fully 3D-printed 5-inch X-quad FPV racing drone designed in Onshape — frame, arms,
 and waterproof enclosures are all printed. Designed for 6S power.
 
+> **Draft README.** The facts, measurements, and file list below were compiled
+> from the Onshape model and the exported STLs. The "Why I built this" section
+> is a placeholder for the builder's own words.
 
 ## What it is
 
@@ -24,6 +27,9 @@ a camera housing, an ESP32 case, and battery feet.
   and the ESP32 in a printed case with a front port slot. The enclosures use a
   silicone seal — the design's shared variables include a 6.6 mm silicone size
   (`#sizeofsilicone`).
+- **Kevlar-cord stiffening.** Holes in the arms carry Kevlar cord to stiffen
+  the printed frame — the Ø5.0 mm holes at the arm tips (97.0 mm from center)
+  are the cord holes.
 - **6S power.** Built for 6S batteries, which is unusual for a small printed
   racing frame — most printed mini-quads run 4S. Higher voltage means more
   punch for the same current, at the cost of needing ESCs and motors rated
@@ -44,21 +50,21 @@ All measurements below were taken from the Onshape model with the Measure tool
 | Adjacent-motor spacing | 165.1 mm |
 | Motor axis distance from center | 116.75 mm |
 | Motor mounting pattern | 4x M3 holes (Ø3.0 mm) on a 16.0 mm bolt circle, per arm tip |
-| Extra hole at each arm tip | Ø5.0 mm, centered 97.0 mm from frame center (purpose not stated in the model) |
+| Extra hole at each arm tip | Ø5.0 mm, centered 97.0 mm from frame center (Kevlar cord hole) |
 | Arm top-face area (one arm) | 1,626 mm² |
 | Current design | V4 Part Studio, 389 features, 15 parts |
 | Power | 6S (build intent) |
+| Prop size | 5-inch (confirmed by the builder) |
 
 Motor mounting uses M3 screws 10 mm long (`#motorscrewlength`), with a 3.0 mm
 motor-bracket thickness (`#motorbracketthickness`) and 3.7 mm brass inserts
 (`#brassinsertd`). Other shared variables: mounting screw Ø2.25 mm, hook
 screw Ø2.7 mm, ESC screw hole Ø3.0 mm, motor screw head 3.0 mm thick.
 
-**Prop size — to be confirmed.** The prop size is not stated anywhere in the
-model. The measured 233.5 mm motor diagonal and 16 mm motor pattern are
-5-inch class (3-inch motors use 9 mm or 12 mm patterns), so the frame as
-modeled fits 5-inch props. Confirm the intended prop size before ordering
-props or motors.
+**Prop size — 5-inch (confirmed by the builder).** The measured 233.5 mm
+motor diagonal and 16 mm motor pattern are 5-inch class (3-inch motors use
+9 mm or 12 mm patterns), matching the builder's confirmation that this is a
+5-inch drone.
 
 **Plate thickness / print material — not stated in the model.** The frame/arm
 plate thickness was not measured, and the print material is not specified in
@@ -171,7 +177,8 @@ add them here once the parts have been test-printed.
 
 ## Why I built this
 
-I had the idea for kevlar cords for stiffness instead of requiring carbon fiber, and making it cheaper and easier to fly. Also I needed a cheap drone (but it ended up costing more from electronics and filament).
+*[Write this in your own words: what made you design this drone, what problem
+the waterproofing solves, and what you want to do with it.]*
 
 ## License
 
