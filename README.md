@@ -69,7 +69,7 @@ the flat-plate appearance; no material is assigned in the model.
 
 All STLs are in `STL/`, exported from Onshape as binary STL, millimeters,
 fine resolution. Each file was checked programmatically: valid binary STL,
-zero degenerate triangles, and watertight unless noted.
+zero degenerate triangles, and watertight.
 
 | Part | File | Triangles | Size (mm) | Volume | Watertight |
 |---|---|---|---|---|---|
@@ -77,7 +77,7 @@ zero degenerate triangles, and watertight unless noted.
 | Battery Feet (right) | `STL/Battery-Feet/Battery-Feet-Part-2.stl` | 11,330 | 50.2 x 19.1 x 12.7 | 7,625 mm³ | Yes |
 | Camera V2 | `STL/Camera-V2/Camera-V2-Part-1.stl` | 152 | 4.7 x 2.8 x 19.1 | 147 mm³ | Yes |
 | Camera V2 | `STL/Camera-V2/Camera-V2-Part-2.stl` | 968 | 11.0 x 11.0 x 5.1 | 313 mm³ | Yes |
-| Camera V2 | `STL/Camera-V2/Camera-V2-Part-3.stl` | 51,894 | 24.2 x 14.9 x 16.7 | 2,027 mm³ | **No — 4 bad edges (small mesh hole)** |
+| Camera V2 | `STL/Camera-V2/Camera-V2-Part-3.stl` | 51,894 | 24.2 x 14.9 x 16.7 | 2,027 mm³ | Yes |
 | Camera V2 | `STL/Camera-V2/Camera-V2-Part-4.stl` | 24 | 15.0 x 34.4 x 14.5 | 3,583 mm³ | Yes |
 | Camera V2 | `STL/Camera-V2/Camera-V2-Part-5.stl` | 4,536 | 28.0 x 14.7 x 15.8 | 3,468 mm³ | Yes |
 | Camera V2 | `STL/Camera-V2/Camera-V2-Part-6.stl` | 5,726 | 28.0 x 14.7 x 6.0 | 797 mm³ | Yes |
@@ -102,9 +102,11 @@ Notes on the printed parts:
   a front port slot.
 - **Controller Cap** is a small tapered cap built on an imported dual-axis
   joystick module part.
-- **Camera V2 Part 3 is not watertight** (4 edges shared by the wrong number
-  of triangles). Most slicers will still print it, but the mesh should be
-  repaired in Onshape before relying on it.
+- **Camera V2 Part 3 re-checked watertight.** An earlier check flagged it as
+  having 4 bad edges, but a re-check of the file in the repo (51,894
+  triangles, 25,929 vertices, 77,841 edges — every edge shared by exactly two
+  triangles, consistent winding, zero degenerate triangles) shows it is a
+  closed mesh. No repair needed.
 
 ## Bought parts (not printed)
 
