@@ -3,9 +3,6 @@
 A fully 3D-printed X-quad FPV racing drone designed in Onshape — frame, arms,
 and waterproof enclosures are all printed. Designed for 6S power.
 
-> **Draft README.** The facts, measurements, and file list below were compiled
-> from the Onshape model and the exported STLs. The "Why I built this" section
-> is a placeholder for the builder's own words.
 
 ## What it is
 
@@ -174,8 +171,7 @@ add them here once the parts have been test-printed.
 
 ## Why I built this
 
-*[Write this in your own words: what made you design this drone, what problem
-the waterproofing solves, and what you want to do with it.]*
+I had the idea for kevlar cords for stiffness instead of requiring carbon fiber, and making it cheaper and easier to fly. Also I needed a cheap drone (but it ended up costing more from electronics and filament).
 
 ## License
 
