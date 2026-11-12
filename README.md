@@ -1,7 +1,7 @@
 # 3D-Printed 6S Racing Drone
 
-An X-quad FPV racing drone designed in Onshape, built around a custom frame with
-3D-printed waterproof enclosures for the electronics. Designed for 6S power.
+A fully 3D-printed X-quad FPV racing drone designed in Onshape — frame, arms,
+and waterproof enclosures are all printed. Designed for 6S power.
 
 > **Draft README.** The facts, measurements, and file list below were compiled
 > from the Onshape model and the exported STLs. The "Why I built this" section
@@ -18,11 +18,14 @@ a camera housing, an ESP32 case, and battery feet.
 
 ## What makes it unique
 
-- **3D-printed waterproofing.** Instead of buying a waterproof frame, the
-  vulnerable electronics get custom sealed enclosures: the ESC lives in a
-  lidded waterproof box (V3), the camera in its own printed housing, and the
-  ESP32 in a printed case with a front port slot. The enclosures use a silicone
-  seal — the design's shared variables include a 6.6 mm silicone size
+- **Fully 3D-printed.** The whole airframe is printed — arms, top plate,
+  central enclosure, and all the accessories. No cut carbon fiber anywhere in
+  the current design; the V1 tab is named "Carbon Fiber Tubes" because the
+  first iteration used carbon-fiber tubes, and the current V4 design is printed
+  throughout. The vulnerable electronics get custom sealed enclosures: the ESC
+  lives in a lidded waterproof box (V3), the camera in its own printed housing,
+  and the ESP32 in a printed case with a front port slot. The enclosures use a
+  silicone seal — the design's shared variables include a 6.6 mm silicone size
   (`#sizeofsilicone`).
 - **6S power.** Built for 6S batteries, which is unusual for a small printed
   racing frame — most printed mini-quads run 4S. Higher voltage means more
@@ -60,10 +63,11 @@ model. The measured 233.5 mm motor diagonal and 16 mm motor pattern are
 modeled fits 5-inch props. Confirm the intended prop size before ordering
 props or motors.
 
-**Plate thickness — not measured.** The frame/arm plate thickness is not
-stated in the model and was not measured. The "carbon fiber" identification of
-the frame plates is inference from the V1 tab name ("Carbon Fiber Tubes") and
-the flat-plate appearance; no material is assigned in the model.
+**Plate thickness / print material — not stated in the model.** The frame/arm
+plate thickness was not measured, and the print material is not specified in
+the model. The frame is 3D printed (confirmed by the builder); the V1 tab
+name ("Carbon Fiber Tubes") refers to the first iteration, not the current
+design.
 
 ## 3D-printed parts
 
@@ -110,7 +114,9 @@ Notes on the printed parts:
 
 ## Bought parts (not printed)
 
-- Frame arms and top plate: flat plates, consistent with cut carbon fiber.
+The frame, arms, top plate, and all enclosures are 3D printed (see `STL/`).
+The bought parts are:
+
 - Motors: 16 mm pattern (M3), 220x-size class. Specific motor model not
   stated in the model.
 - 4-in-1 ESC board: the document holds a photograph of a red 4-in-1 ESC as a
